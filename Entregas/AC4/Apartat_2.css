@@ -1,0 +1,44 @@
+body {
+  background-color: black;
+  color: #00ff66;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas:
+    ". i1 i2 ."
+    "i3 i4 i5 i6"
+    "i7 i8 . .";
+  gap: 5px;
+}
+
+.item {
+  object-fit: cover;
+  border: 3px solid #00ff66;
+  box-sizing: border-box;
+}
+
+.i1 { width: 250px; height: 150px; }
+.i2 { width: 250px; height: 150px; }
+.i3 { width: 250px; height: 300px; }
+.i4 { width: 250px; height: 300px; }
+.i5 { width: 250px; height: 300px; }
+.i6 { width: 250px; height: 300px; }
+.i7 { width: 250px; height: 300px; }
+.i8 { width: 250px; height: 300px; }
+
+/* ASIGNACIÓN DE ÁREAS */
+.i1 { grid-area: i1; }
+.i2 { grid-area: i2; }
+.i3 { grid-area: i3; }
+.i4 { grid-area: i4; }
+.i5 { grid-area: i5; }
+.i6 { grid-area: i6; }
+.i7 { grid-area: i7; }
+.i8 { grid-area: i8; }
